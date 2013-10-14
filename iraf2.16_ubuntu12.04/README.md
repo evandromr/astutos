@@ -209,7 +209,9 @@ or
 __Note:__ The "!" symbols runs any following command in the shell, instead of
 inside IRAF. This is useful.
 
-## A small but useful script
+### A small but useful script
+
+An easiest way to start iraf, is to create a script and put it somewhere on your system PATH.  
 
 Copy the following code to a file. You can do it in any editor of your choice, 
 but be sure to open it with administrative permissions (use `sudo`).
