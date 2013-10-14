@@ -230,7 +230,7 @@ Save in `/usr/local/bin/irafshell`.
 Now, type in your terminal. 
 
 ```
-sudo chmod +x /usr/local/bin/pyrafshell
+sudo chmod +x /usr/local/bin/irafshell
 ```
 
 This will turn the script executable and you can type `irafshell` in your terminal to open 
