@@ -5,14 +5,12 @@ A (perhaps) comprehensive guide to install IRAF on Ubuntu, without all the
 Whibley-Wobbly of creating users, copy/paste unknow commands, and running third-
 parties scripts.
 
----
 
 ## Step 1: Download IRAF
 
 - Go to the [IRAF website](http://iraf.noao.edu/) and download the linux 64bit
 binary distribution.
 
-------
 
 ##Step 2: Installing IRAF
 
@@ -55,7 +53,6 @@ following instructions (wich you should), I recommend have a look at it.
  - Decompress the archive
 
 
-
 `tar zxvf iraf.lnux.x86_64.tar.gz`
 
  - Start the `tcsh` shell as 'sudo'.
@@ -89,7 +86,6 @@ The graphical routines of IRAF requires a kind of terminal the supports them,
 and the common gnome-terminal on Ubuntu doesn't.
 But for that we have to install X11IRAF.
 
----
 
 ## Step 3: Downloading X11IRAF
 
@@ -158,7 +154,6 @@ So, just to be sure, I copied the app-defaults files to this folder too, with:
 
 If everything worked as expected, you are ready to start using IRAF, but...
 
----
 
 # Advices
 
