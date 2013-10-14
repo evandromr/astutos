@@ -209,4 +209,31 @@ or
 __Note:__ The "!" symbols runs any following command in the shell, instead of
 inside IRAF. This is useful.
 
+## A small but useful script
+
+Copy the following code to a file. You can do it in any editor of your choice, 
+but be sure to open it with administrative permissions (use `sudo`).
+
+```
+#!/bin/bash
+PID=`pidof ds9`
+if [ ! $PID ]; then
+   ds9 &
+fi
+pushd ~/iraf > /dev/null
+xgterm -geometry 80x43 -sb -title "IRAF" -bg "lemon chiffon" -fg "black" -e "ecl" &
+popd > /dev/null
+```
+
+Save in `/usr/local/bin/irafshell`.
+
+Now, type in your terminal. 
+
+```
+sudo chmod +x /usr/local/bin/pyrafshell
+```
+
+This will turn the script executable and you can type `irafshell` in your terminal to open 
+`iraf` and `DS9`.
+
 ---
