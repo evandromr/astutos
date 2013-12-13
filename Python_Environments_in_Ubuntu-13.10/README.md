@@ -160,6 +160,14 @@ Install at the local path
 
 ---
 
+### To create a Python-2.7 environment
+
+Use [virtualenv](http://www.virtualenv.org/en/latest/virtualenv.html).
+
+It already comes with `setuptools` and `pip` to install packages in the environment.
+
+---
+
 ### To create a Python-3.3 environment
 
 If you just installed python-3.3 or later, it comes with a virtual environment
@@ -174,6 +182,8 @@ _`bash_aliases`_ in [my configuration
 files](https://github.com/evandromr/configuration_files))
 
     source ~/MyPython/python3env/bin/activate
+
+The environments created by pyvenv doesn't come with `pip` installed, so we have to do it manually.
 
 To install pip on it (or in the main python installation)
 
