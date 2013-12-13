@@ -1,4 +1,3 @@
-
 # Setting up Python environments for My needs
 
 3 different ways to do it without root privileges (read: do not mess with the
@@ -25,7 +24,7 @@ softwares (like `iraf`, `ds9`, `xgterm`, `ximtool`, etc.).
 This is the best option if you are going to work with python and those other
 softwares, and don't need python3 support (see comments below).
 
-Ureka 1.0 comes with python 2.7.X, and is not compatible with python-3 yet.
+Ureka 1.0 comes with python 2.7.5, and is not compatible with python-3 yet.
 Also, `IRAF` and some other softwares requires 32-bit libraries that doesn't
 come installed as default in 64-bit distributions of Ubuntu.
 Have a look at their notes about [32-bit support on 64-bit
@@ -51,6 +50,8 @@ And deactivate it with:
 
 And you can change this aliases in your `~/.bashrc` file (and/or put then in
 `~/.bash_aliases`).
+
+Ureka comes with `setuptools` and `pip` already included.  
 
 To install/upgrade python packages, just use `pip` (with `ur_setup` __active__):
 
