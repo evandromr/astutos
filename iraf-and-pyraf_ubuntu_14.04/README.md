@@ -17,10 +17,10 @@ following packages is enough to satisfy all of them
 If after installation anything related to graphical interface breaks try
 installing the following 'X' development libraries and restart the process
 
+(I don't think this is necessary)
+
   - Development libraries of the X server
-      - `sudo apt-get install xserver-xorg-dev-lts-raring`
       - `sudo apt-get install xorg-dev`
-      - Be carefull with the last one, do not let it remove any package.
 
 ##Step 2: Installing IRAF
 
