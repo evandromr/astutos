@@ -34,15 +34,15 @@
    - `shutil.copyfile(src, dst)`: copy a file from 'src' to 'dst'. Check also `shutil.copy` it accepts folder as destinations.  
    - `shutil.move(src, dst)`: move a file to another location  
     
-   - ** IMPORTANT **  
-   - subprocess.call('command --and some parameters', shell=True)  
-      - In this case the command is passed to the shell and uses your system variables but everything should be one single string: commands and parameters.  
+  **IMPORTANT**  
+  - subprocess.call('command --and some parameters', shell=True)  
+    - In this case the command is passed to the shell and uses your system variables but everything should be one single string: commands and parameters.  
 
-   or  
+  or  
 
-   - subprocess.call('command', '--and', 'some', 'parameters')  
-      - In this case the command is passed to a sub-shell and uses the system variables that you setup with `os.environ`: commands and parameters are separated by commas  
-      - in some cases your parameter might need names like: ['command', 'filename=afile.txt', 'table=sometable.dat']. And usually everythin needs to be a string.  
+  - subprocess.call('command', '--and', 'some', 'parameters')  
+    - In this case the command is passed to a sub-shell and uses the system variables that you setup with `os.environ`: commands and parameters are separated by commas  
+    - in some cases your parameter might need names like: ['command', 'filename=afile.txt', 'table=sometable.dat']. And usually everythin needs to be a string.  
 
 ### Semi interactive programs
     
